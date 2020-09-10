@@ -19,17 +19,17 @@ This demo illustrates the use of Configurable Logic Cells (CLC) in designing fin
 Let’s assume a vending machine dispensing bottle/can for 75₵ and user can enter coins in denominations of 1$ or 25₵.
 
 * Customers can insert either a dollar (1$) or quarters (25₵). Once enough money is inserted, the vending machine dispenses a bottle/can.
-** If the customer inserts a dollar, it will return one quarter as change along with the purchased bottle/can.
-** If the customer inserts three quarters a bottle/can will be dispensed.
+ 1. If the customer inserts a dollar, it will return one quarter as change along with the purchased bottle/can.
+ 2. If the customer inserts three quarters a bottle/can will be dispensed.
 * A “Money Receiver” detects when money has been inserted in the vending machine.
 * The money receiver sends two logic signals to the circuit indicating whether a dollar or quarter was inserted.
 * A “Bottle/Can Dispenser” system holds the bottles/cans and will release one bottle/can when its input signal is asserted.
 * A “Coin Return” system holds quarters for change and will release coins when its input signal is asserted.
 * Depending on the inserted amount of money, it returns the correct change, as follows:
-** It returns a quarter if a dollar is inserted.
-** It returns two quarters if a dollar is inserted after a quarter.
-** It returns three quarters if a dollar is inserted after two quarters.
-** In all the above cases, the Bottle/Can Dispenser releases a bottle, or a can.
+ 1. It returns a quarter if a dollar is inserted.
+ 2. It returns two quarters if a dollar is inserted after a quarter.
+ 3. It returns three quarters if a dollar is inserted after two quarters.
+ 4. In all the above cases, the Bottle/Can Dispenser releases a bottle, or a can.
 
 The system also generates an error condition when a dollar and a quarter are inserted simultaneously.
 
