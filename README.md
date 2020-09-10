@@ -144,15 +144,15 @@ According to the logic expressions derived in Application Description CLC are co
 * CLC 1: 1-input D flip-flop
 
 <p align="center">
-  <img width=600 height=auto src="images/CLC_1_1-input_D flip-flop.png">
-  <br>Fig 5 : CLC 1: 1-input D flip-flop<br>
+  <img width=600 height=auto src="images/CLC_1_1-input_D_flip-flop.png">
+  <br>Fig 7 : CLC 3: 4-input AND<br>
 </p>
 
 * CLC 2: 1-input D flip-flop
 
 <p align="center">
-  <img width=600 height=auto src="images/CLC_2_1-input_D flip-flop.png">
-  <br>Fig 6 : CLC 2: 1-input D flip-flop<br>
+  <img width=600 height=auto src="images/CLC_2_1-input_D_flip-flop.png">
+  <br>Fig 7 : CLC 3: 4-input AND<br>
 </p>
 
 * CLC 3: 4-input AND
