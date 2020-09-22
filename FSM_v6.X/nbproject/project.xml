@@ -3,7 +3,7 @@
     <type>com.microchip.mplab.nbide.embedded.makeproject</type>
     <configuration>
         <data xmlns="http://www.netbeans.org/ns/make-project/1">
-            <name>FSM_v6</name>
+            <name>pic18f47q10-clc-vending-machine-mplab</name>
             <creation-uuid>bd3615ea-5422-497e-a697-dd7f821b104a</creation-uuid>
             <make-project-type>0</make-project-type>
             <c-extensions>c</c-extensions>
