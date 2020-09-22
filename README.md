@@ -33,10 +33,8 @@ Let’s assume a vending machine dispensing bottle/can for 75₵ and user can en
 
 The system also generates an error condition when a dollar and a quarter are inserted simultaneously.
 
-<br><img src="images/AVR128DA48_CNANO_instructions.PNG" width="500">
 <p align="center">
-  <img width=600 height=auto src="images/vending-machine-using-clc-demo.mp4">
-  <br>Vending Machine using CLC demo<br>
+<br><a href="https://youtu.be/1CvwDLw95K8" rel="nofollow"><img src="images/youtube.png" alt= " PIC18F47Q10 " width="500"/></a>
 </p>
 
 ## Hardware Used
