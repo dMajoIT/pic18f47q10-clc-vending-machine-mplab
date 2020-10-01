@@ -3,10 +3,10 @@
 
 # Vending machine using Configurable Logic Cells
 
+<!--This project demonstrate the uses of CLCs in real time applications.In this demo we will realize a 3-state Finite State Machine using CLCs and other Core Independent Peripherals(CIPs). -->
+
 ## Introduction
 This demo illustrates the use of Configurable Logic Cells (CLC) in designing finite state machines (FSM). For demonstration vending machine is implemented as 3 state FSM. This demo can also be used with PIC devices which has CLC peripheral, this example is built on PIC18F47Q10 device using curiosity HPC board. The PIC18F Q10 family of devices are equipped with 8 CLCs. The Configurable Logic Cell (CLC) is a flexible peripheral that enables creation of on-chip custom logic functions for PIC® microcontrollers. It can be configured with basic logic functions such as Logic Gates, Flip Flops and Latches.
-
-**Note:** ***This project demonstrate the uses of CLCs in real time applications.In this demo we will realize a 3-state Finite State Machine using CLCs and other Core Independent Peripherals(CIPs).***
 
 ## Related Application Note
 
