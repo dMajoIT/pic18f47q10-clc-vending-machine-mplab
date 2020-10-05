@@ -43,7 +43,7 @@ The system also generates an error condition when a dollar and a quarter are ins
 
 <p align="center">
   <img width=600 height=auto src="images/hardware_components.png">
-  <br>Fig 1 : PIC18-Q10 MCU with LCD Mini Click<br>
+  <br>Fig 1 : PIC18F47Q10 MCU with LCD Mini Click<br>
 </p>
 
 
@@ -53,7 +53,7 @@ Microchip’s free MPLAB X IDE, compiler and MPLAB Code Configurator (MCC) graph
 
 * [MPLAB X IDE v5.40](https://www.microchip.com/mplab/mplab-x-ide "MPLAB X IDE v5.40")
 * [XC8 Compiler v2.20](https://www.microchip.com/mplab/compilers "XC8 Compiler v2.20")
-* [MPLAB Code Configurator (MCC) v4.85](https://www.microchip.com/mplab/mplab-code-configurator "MPLAB Code Configurator (MCC) v4.85")
+* [MPLAB Code Configurator (MCC) v4.0.1](https://www.microchip.com/mplab/mplab-code-configurator "MPLAB Code Configurator (MCC) v4.0.1")
 
 
 **Note: For running the demo, the installed tool versions should be same or later. This example is not tested with previous versions.**
