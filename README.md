@@ -3,10 +3,10 @@
 
 # Vending machine using Configurable Logic Cells
 
-<!--This project demonstrate the uses of CLCs in real time applications.In this demo we will realize a 3-state Finite State Machine using CLCs and other Core Independent Peripherals(CIPs). -->
+This project demonstrate the uses of CLCs in real time applications.In this demo we will realize a 3-state Finite State Machine using CLCs and other Core Independent Peripherals(CIPs).
 
 ## Introduction
-This demo illustrates the use of Configurable Logic Cells (CLC) in designing finite state machines (FSM). For demonstration vending machine is implemented as 3 state FSM. This demo can also be used with PIC devices which has CLC peripheral, this example is built on PIC18F-Q10 device using curiosity HPC board. The PIC18F-Q10 family of devices are equipped with 8 CLCs. The Configurable Logic Cell (CLC) is a flexible peripheral that enables creation of on-chip custom logic functions for PIC® microcontrollers. It can be configured with basic logic functions such as Logic Gates, Flip Flops and Latches.
+This demo illustrates the use of Configurable Logic Cells (CLC) in designing finite state machines (FSM). For demonstration vending machine is implemented as 3 state FSM. This demo can also be used with PIC devices which has CLC peripheral, this example is built on PIC18-Q10 device using curiosity HPC board. The PIC18-Q10 family of devices are equipped with 8 CLCs. The Configurable Logic Cell (CLC) is a flexible peripheral that enables creation of on-chip custom logic functions for PIC® microcontrollers. It can be configured with basic logic functions such as Logic Gates, Flip Flops and Latches.
 
 ## Related Application Note(s)
 
@@ -15,36 +15,35 @@ This demo illustrates the use of Configurable Logic Cells (CLC) in designing fin
 
 
 ## Application Overview
-
 Let’s assume a vending machine dispensing bottle/can for 75₵ and user can enter coins in denominations of 1$ or 25₵.
 
 * Customers can insert either a dollar (1$) or quarters (25₵). Once enough money is inserted, the vending machine dispenses a bottle/can.
- 1. If the customer inserts a dollar, it will return one quarter as change along with the purchased bottle/can.
- 2. If the customer inserts three quarters a bottle/can will be dispensed.
+>> 1. If the customer inserts a dollar, it will return one quarter as change along with the purchased bottle/can.
+>> 2. If the customer inserts three quarters a bottle/can will be dispensed.
 * A “Money Receiver” detects when money has been inserted in the vending machine.
 * The money receiver sends two logic signals to the circuit indicating whether a dollar or quarter was inserted.
 * A “Bottle/Can Dispenser” system holds the bottles/cans and will release one bottle/can when its input signal is asserted.
 * A “Coin Return” system holds quarters for change and will release coins when its input signal is asserted.
 * Depending on the inserted amount of money, it returns the correct change, as follows:
- 1. It returns a quarter if a dollar is inserted.
- 2. It returns two quarters if a dollar is inserted after a quarter.
- 3. It returns three quarters if a dollar is inserted after two quarters.
- 4. In all the above cases, the Bottle/Can Dispenser releases a bottle, or a can.
+>> 1. It returns a quarter if a dollar is inserted.
+>> 2. It returns two quarters if a dollar is inserted after a quarter.
+>> 3. It returns three quarters if a dollar is inserted after two quarters.
+>> 4. In all the above cases, the Bottle/Can Dispenser releases a bottle, or a can.
 
 The system also generates an error condition when a dollar and a quarter are inserted simultaneously.
 
 <p align="center">
-<br><a href="https://youtu.be/1CvwDLw95K8" rel="nofollow"><img src="images/youtube.png" alt= " PIC18F-Q10 " width="500"/></a>
+<br><a href="https://youtu.be/1CvwDLw95K8" rel="nofollow"><img src="images/youtube.png" alt= " PIC18-Q10 " width="500"/></a>
 </p>
 
 ## Hardware Used
 
-* [PIC18F-Q10 MCU](https://www.microchip.com/wwwproducts/en/PIC18F47Q10 "PIC18F-Q10 MCU") 40-pin PDIP is used with [Curiosity HPC](https://www.microchip.com/DevelopmentTools/ProductDetails/PartNO/DM164136 "Curiosity HPC") development board from Microchip.
+* [PIC18-Q10 MCU](https://www.microchip.com/wwwproducts/en/PIC18F47Q10 "PIC18-Q10 MCU") 40-pin PDIP is used with [Curiosity HPC](https://www.microchip.com/DevelopmentTools/ProductDetails/PartNO/DM164136 "Curiosity HPC") development board from Microchip.
 * [LCD mini click](https://www.mikroe.com/lcd-mini-click "LCD mini click") board from MikroElektronika.
 
 <p align="center">
   <img width=600 height=auto src="images/hardware_components.png">
-  <br>Fig 1 : PIC18F-Q10 MCU with LCD Mini Click<br>
+  <br>Fig 1 : PIC18-Q10 MCU with LCD Mini Click<br>
 </p>
 
 

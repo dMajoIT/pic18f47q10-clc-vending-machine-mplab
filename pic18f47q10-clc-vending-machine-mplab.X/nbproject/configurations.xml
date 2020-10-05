@@ -90,13 +90,13 @@
         <targetDevice>PIC18F47Q10</targetDevice>
         <targetHeader></targetHeader>
         <targetPluginBoard></targetPluginBoard>
-        <platformTool>PKOBSKDEPlatformTool</platformTool>
+        <platformTool>noID</platformTool>
         <languageToolchain>XC8</languageToolchain>
-        <languageToolchainVersion>2.20</languageToolchainVersion>
+        <languageToolchainVersion>2.30</languageToolchainVersion>
         <platform>3</platform>
       </toolsSet>
       <packs>
-        <pack name="PIC18F-Q_DFP" vendor="Microchip" version="1.7.135"/>
+        <pack name="PIC18F-Q_DFP" vendor="Microchip" version="1.8.154"/>
       </packs>
       <ScriptingSettings>
       </ScriptingSettings>
