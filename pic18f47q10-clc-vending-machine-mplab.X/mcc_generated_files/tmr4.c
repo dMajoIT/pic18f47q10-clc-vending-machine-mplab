@@ -54,7 +54,6 @@
 /**
   Section: Global Variables Definitions
 */
-extern uint16_t sleepCounter;
 void (*TMR4_InterruptHandler)(void);
 
 /**
@@ -182,11 +181,6 @@ void TMR4_SetInterruptHandler(void (* InterruptHandler)(void)){
 void TMR4_DefaultInterruptHandler(void){
     // add your TMR4 interrupt custom code
     // or set custom function using TMR4_SetInterruptHandler()
-    
-    //This ISR will come at every switch press
-    //if the device was in sleep it just woke up by this ISR
-    //Reset user inactivity counter as switch is pressed
-    sleepCounter = 0;
 }
 
 /**

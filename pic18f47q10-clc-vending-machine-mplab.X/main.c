@@ -44,7 +44,6 @@
 #include "mcc_generated_files/mcc.h"
 #include "application.h"
 
-
 /*
                          Main application
  */
@@ -68,9 +67,12 @@ void main(void)
    
     // Disable the Peripheral Interrupts
     //INTERRUPT_PeripheralInterruptDisable();
-
-   ApplicationInit();
-  
+    TMR2_SetInterruptHandler(TMR2UserInterrupt);
+    TMR4_SetInterruptHandler(TMR4UserInterrupt);
+    TMR5_SetInterruptHandler(TMR5UserInterrupt);
+    
+    ApplicationInit();
+    
     while (1)
     {
         // Add your application code

@@ -50,13 +50,6 @@
 
 #include <xc.h>
 #include "tmr5.h"
-#include "pin_manager.h"
-
-extern bool bottleFlag;
-extern uint8_t changeFlag;
-extern bool invalidFlag;
-extern bool timerLedFlag;
-
 
 /**
   Section: Global Variables Definitions
@@ -174,21 +167,7 @@ void TMR5_SetInterruptHandler(void (* InterruptHandler)(void)) {
 
 void TMR5_DefaultInterruptHandler(void) {
     // add your TMR5 interrupt custom code
-    // or set custom function using TMR5_SetInterruptHandler()
-
-    //Dispense flag reset
-    bottleFlag = false;
-    changeFlag = 0;
-    //invalidFlag = false;
-    timerLedFlag = false;
-    // make both the LEDs low to indicate the BOTTLE/CHANGE is dispensed
-    CHANGE1_SetLow();
-    CHANGE2_SetLow();
-    CHANGE3_SetLow();
-    BOTTLE_SetLow();
-    // stop the timer and reload it
-    TMR5_StopTimer();
-    TMR5_WriteTimer(timer5ReloadVal);
+    // or set custom function using TMR5_SetInterruptHandler() 
 }
 
 /**

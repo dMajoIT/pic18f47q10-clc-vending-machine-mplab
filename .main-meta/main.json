@@ -3,28 +3,28 @@
     "category": "com.microchip.ide.project",
     "content": {
         "metaDataVersion": "1.1.0",
-        "name": "com.microchip.mcu8.mplabx.project.",
-        "version": " ",
-        "displayName": "  ",
-        "projectName": "",
-        "shortDescription": "",
+        "name": "com.microchip.mcu8.mplabx.project.pic18f47q10-clc-vending-machine-mplab",
+        "version": "1.0.0",
+        "displayName": "Vending Machine using Configurable Logic Cells",
+        "projectName": "pic18f47q10-clc-vending-machine-mplab",
+        "shortDescription": "This project demonstrates the Vending Machine application using CLCs",
         "ide": {
-            "name": "",
-            "semverRange": ""
+            "name": "MplabX",
+            "semverRange": "5.40"
         },
         "compiler": [
 			{
-				"name": "",
-				"semverRange": ""
+				"name": "XC8",
+				"semverRange": "2.20"
 			}
 		],
         "dfp": {
-            "name": "",
-            "semverRange": ""
+            "name": "PIC18F-Q_DFP",
+            "semverRange": "1.7.135"
         },
         "configurator": {
-            "name": "",
-            "semverRange": ""
+            "name": "MCC",
+            "semverRange": "4.85"
         },
         "device": {
             "metaDataVersion": "1.0.0",
@@ -32,26 +32,38 @@
             "content": {
                 "metaDataVersion": "1.0.0",
                 "category": "com.microchip.device",
-                "name": "",
+                "name": "PIC18F47Q10",
                 "versionRange": "*"
             }
         },
-        "author": "",
+        "author": "Microchip",
         "subcategories": [
-            "",
+            "MCC",
             [
-               "Peripherals", ""
+               "Peripherals", "TIMER"
             ],
             [
-               "Peripherals", ""
-            ]            			
+               "Peripherals", "CLC"
+            ],
+			[
+               "Peripherals", "INTERRUPT"
+            ], 
+			[
+               "Peripherals", "GPIO"
+            ], 
+			[
+               "Peripherals", "SPI"
+            ] 
         ],
         "peripherals": [
-            "",""
+            "TIMER","CLC","INTERRUPT","GPIO","SPI"
         ],
         "keywords": [
-            "",
-            ""			
+            "MCC",
+            "PIC 18F",
+			"PIC18F47Q10",
+			"Vending Machine",
+			"CLC"
         ],
 		"additionalData": {
 			"longDescription": {

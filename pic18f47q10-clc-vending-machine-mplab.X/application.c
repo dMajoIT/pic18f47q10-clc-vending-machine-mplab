@@ -10,6 +10,9 @@ uint8_t changeFlag = 0xff; //keeping in to unknown case to push the switch contr
 bool invalidFlag;
 bool timerLedFlag;
 
+volatile uint16_t timer5ReloadVal;
+extern uint16_t sleepCounter;
+
 char stringRow1[LCD_STRING_SIZE];
 char stringRow2[LCD_STRING_SIZE];
 uint16_t sleepCounter = 0;
@@ -260,4 +263,61 @@ void FillDispenseData(void) {
                 break;
         }
     }
+}
+
+/**
+  @Param
+   none
+  @Returns
+   none
+  @Description
+   Reset user inactivity counter as switch is pressed
+  @Example
+   TMR2UserInterrupt();
+ */
+void TMR2UserInterrupt(void)
+{
+    sleepCounter = 0;
+}
+
+/**
+  @Param
+   none
+  @Returns
+   none
+  @Description
+   Reset user inactivity counter as switch is pressed
+  @Example
+   TMR4UserInterrupt();
+ */
+void TMR4UserInterrupt(void)
+{
+    sleepCounter = 0;
+}
+
+/**
+  @Param
+   none
+  @Returns
+   none
+  @Description
+   Flag reset, Dispense and bottle/change information
+  @Example
+   TMR5UserInterrupt();
+ */
+void TMR5UserInterrupt(void)
+{
+    //Dispense flag reset
+    bottleFlag = false;
+    changeFlag = 0;
+    //invalidFlag = false;
+    timerLedFlag = false;
+    // make both the LEDs low to indicate the BOTTLE/CHANGE is dispensed
+    CHANGE1_SetLow();
+    CHANGE2_SetLow();
+    CHANGE3_SetLow();
+    BOTTLE_SetLow();
+    // stop the timer and reload it
+    TMR5_StopTimer();
+    TMR5_WriteTimer(timer5ReloadVal);
 }

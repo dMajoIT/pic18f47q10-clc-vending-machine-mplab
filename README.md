@@ -6,9 +6,9 @@
 <!--This project demonstrate the uses of CLCs in real time applications.In this demo we will realize a 3-state Finite State Machine using CLCs and other Core Independent Peripherals(CIPs). -->
 
 ## Introduction
-This demo illustrates the use of Configurable Logic Cells (CLC) in designing finite state machines (FSM). For demonstration vending machine is implemented as 3 state FSM. This demo can also be used with PIC devices which has CLC peripheral, this example is built on PIC18F47Q10 device using curiosity HPC board. The PIC18F Q10 family of devices are equipped with 8 CLCs. The Configurable Logic Cell (CLC) is a flexible peripheral that enables creation of on-chip custom logic functions for PIC® microcontrollers. It can be configured with basic logic functions such as Logic Gates, Flip Flops and Latches.
+This demo illustrates the use of Configurable Logic Cells (CLC) in designing finite state machines (FSM). For demonstration vending machine is implemented as 3 state FSM. This demo can also be used with PIC devices which has CLC peripheral, this example is built on PIC18F-Q10 device using curiosity HPC board. The PIC18F-Q10 family of devices are equipped with 8 CLCs. The Configurable Logic Cell (CLC) is a flexible peripheral that enables creation of on-chip custom logic functions for PIC® microcontrollers. It can be configured with basic logic functions such as Logic Gates, Flip Flops and Latches.
 
-## Related Application Note
+## Related Application Note(s)
 
 - [Using CLC in Real Time Applications](http://ww1.microchip.com/downloads/en/AppNotes/AN2912-Using-CLCs-in-Real-Time-Apps_00002912A.pdf "Using CLC in Real Time Applications")
 - [Configurable Logic Cells Tips ‘n’ Tricks](http://ww1.microchip.com/downloads/en/devicedoc/41631b.pdf "Configurable Logic Cells Tips ‘n’ Tricks")
@@ -34,17 +34,17 @@ Let’s assume a vending machine dispensing bottle/can for 75₵ and user can en
 The system also generates an error condition when a dollar and a quarter are inserted simultaneously.
 
 <p align="center">
-<br><a href="https://youtu.be/1CvwDLw95K8" rel="nofollow"><img src="images/youtube.png" alt= " PIC18F47Q10 " width="500"/></a>
+<br><a href="https://youtu.be/1CvwDLw95K8" rel="nofollow"><img src="images/youtube.png" alt= " PIC18F-Q10 " width="500"/></a>
 </p>
 
 ## Hardware Used
 
-* [PIC18F47Q10 MCU](https://www.microchip.com/wwwproducts/en/PIC18F47Q10 "PIC18F47Q10 MCU") 40-pin PDIP is used with [Curiosity HPC](https://www.microchip.com/DevelopmentTools/ProductDetails/PartNO/DM164136 "Curiosity HPC") development board from Microchip.
+* [PIC18F-Q10 MCU](https://www.microchip.com/wwwproducts/en/PIC18F47Q10 "PIC18F-Q10 MCU") 40-pin PDIP is used with [Curiosity HPC](https://www.microchip.com/DevelopmentTools/ProductDetails/PartNO/DM164136 "Curiosity HPC") development board from Microchip.
 * [LCD mini click](https://www.mikroe.com/lcd-mini-click "LCD mini click") board from MikroElektronika.
 
 <p align="center">
   <img width=600 height=auto src="images/hardware_components.png">
-  <br>Fig 1 : PIC18F47Q10 MCU with LCD Mini Click<br>
+  <br>Fig 1 : PIC18F-Q10 MCU with LCD Mini Click<br>
 </p>
 
 
@@ -52,9 +52,9 @@ The system also generates an error condition when a dollar and a quarter are ins
 
 Microchip’s free MPLAB X IDE, compiler and MPLAB Code Configurator (MCC) graphical code generator are used throughout the application firmware development to provide easy and hassle-free user experience. Following are the tool versions used for this demo application:
 
-* [MPLAB X IDE v5.20](https://www.microchip.com/mplab/mplab-x-ide "MPLAB X IDE v5.20")
-* [XC8 Compiler v2.05](https://www.microchip.com/mplab/compilers "XC8 Compiler v2.05")
-* [MPLAB Code Configurator (MCC) v3.75](https://www.microchip.com/mplab/mplab-code-configurator "MPLAB Code Configurator (MCC) v3.75")
+* [MPLAB X IDE v5.40](https://www.microchip.com/mplab/mplab-x-ide "MPLAB X IDE v5.40")
+* [XC8 Compiler v2.20](https://www.microchip.com/mplab/compilers "XC8 Compiler v2.20")
+* [MPLAB Code Configurator (MCC) v4.85](https://www.microchip.com/mplab/mplab-code-configurator "MPLAB Code Configurator (MCC) v4.85")
 
 
 **Note: For running the demo, the installed tool versions should be same or later. This example is not tested with previous versions.**

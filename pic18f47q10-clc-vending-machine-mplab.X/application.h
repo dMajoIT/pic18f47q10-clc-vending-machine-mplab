@@ -11,6 +11,11 @@ extern "C" {
     void FillDispenseData(void);
     void CLC_DefaultState();
     void lcd_put_init_message(void);
+    
+    void TMR5UserInterrupt(void);
+    void TMR2UserInterrupt(void);
+    void TMR4UserInterrupt(void);
+    
 
 #ifdef	__cplusplus
 }
