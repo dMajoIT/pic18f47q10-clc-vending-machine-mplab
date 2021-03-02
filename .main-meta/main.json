@@ -38,7 +38,7 @@
         },
         "author": "Microchip",
         "subcategories": [
-            "MCC","Communications"
+            "MCC","Communications",
             [
                "Peripherals", "TMR2"
             ],
