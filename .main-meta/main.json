@@ -58,6 +58,8 @@
         "keywords": [
 			"Display",
 			"Basic Control",
+			"CIP",
+			"Core Independent Peripherals",
 			"Curiosity"
         ],
 		"additionalData": {
