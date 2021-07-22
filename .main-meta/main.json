@@ -4,7 +4,7 @@
     "content": {
         "metaDataVersion": "1.1.0",
         "name": "com.microchip.mcu8.mplabx.project.pic18f47q10-clc-vending-machine-mplab",
-        "version": "1.0.1",
+        "version": "1.0.2",
         "displayName": "Vending Machine using Configurable Logic Cell (CLC)",
         "projectName": "pic18f47q10-clc-vending-machine-mplab",
         "shortDescription": "This demo is developed using PIC18-Q10 family MCU and Curiosity High Pin Count development board. The demo realizes a vending machine through a 3-state Finite State Machine, by using CLCs and other Core Independent Peripherals(CIPs) of PIC18F47Q10 MCU.",
@@ -38,7 +38,7 @@
         },
         "author": "Microchip",
         "subcategories": [
-            "MCC","Communications",
+            "Communications",
             [
                "Peripherals", "TMR2"
             ],
@@ -58,7 +58,6 @@
         "keywords": [
 			"Display",
 			"Basic Control",
-			"CIP",
 			"Core Independent Peripherals",
 			"Curiosity"
         ],
