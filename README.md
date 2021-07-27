@@ -51,9 +51,10 @@ The system also generates an error condition when a dollar and a quarter are ins
 
 Microchip’s free MPLAB X IDE, compiler and MPLAB Code Configurator (MCC) graphical code generator are used throughout the application firmware development to provide easy and hassle-free user experience. Following are the tool versions used for this demo application:
 
-* [MPLAB X IDE v5.40](https://www.microchip.com/mplab/mplab-x-ide "MPLAB X IDE v5.40")
-* [XC8 Compiler v2.30](https://www.microchip.com/mplab/compilers "XC8 Compiler v2.30")
-* [MPLAB Code Configurator (MCC) v4.0.1](https://www.microchip.com/mplab/mplab-code-configurator "MPLAB Code Configurator (MCC) v4.0.1")
+* MPLAB® X IDE [v5.40.0 or newer](https://www.microchip.com/mplab/mplab-x-ide "MPLAB® X IDE v5.40 or newer")
+* XC8 Compiler [v2.30.0 or newer](https://www.microchip.com/mplab/compilers "XC8 Compiler v2.30.0 or newer")
+* Microchip PIC18F-Q Series Device Support Pack [v1.8.154 or newer](https://packs.download.microchip.com/#collapse-Microchip-PIC18F-Q-DFP-pdsc "Microchip PIC18F-Q Series Device Support v1.8.154 or newer")
+* Microchip Code Configurator [v4.0.1 or newer](https://www.microchip.com/mplab/mplab-code-configurator "Microchip Code Configurator v4.0.1 or newer")
 
 
 **Note: For running the demo, the installed tool versions should be same or later. This example is not tested with previous versions.**
